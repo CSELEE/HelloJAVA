@@ -11,12 +11,12 @@ class HighFriend extends Friend{
 	
 	public void showDetailDate() {
 		super.showDetailData();
-		System.out.print("Á÷¾÷:" + work);
+		System.out.print("ì§ì—…:" + work);
 	}
 
 	public void showBasicData() {
-		System.out.print(" ÀÌ¸§:" + name);
-		System.out.print(" ÀüÈ­¹øÈ£:" + phoneNumber);
+		System.out.print(" ì´ë¦„:" + name);
+		System.out.print(" ì „í™”ë²ˆí˜¸:" + phoneNumber);
 	}
 	
 }

@@ -11,13 +11,13 @@ class UnivFriend extends Friend {
 	
 	public void showDetailDate() {
 		super.showDetailData();
-		System.out.print("Àü°ø:" + major);
+		System.out.print("ì „ê³µ :" + major);
 	}
 
 	public void showBasicData() {
-		System.out.print(" ÀÌ¸§:" + name);
-	    System.out.print(" ÀüÈ­¹øÈ£:" + phoneNumber);
-		System.out.print(" Àü°ø:" + major);
+		System.out.print(" ì´ë¦„:" + name);
+	    System.out.print(" ì „í™”ë²ˆí˜¸:" + phoneNumber);
+		System.out.print(" ì „ê³µ:" + major);
 	}
 	
 }

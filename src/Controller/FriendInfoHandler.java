@@ -20,24 +20,26 @@ class FriendInfoHandler {
 		
 		String name, phone, address, work, major;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÀÌ¸§ : "); name = sc.nextLine();
-		System.out.println("ÀüÈ­¹øÈ£ : "); phone = sc.nextLine();
-		System.out.println("ÁÖ¼Ò: "); address = sc.nextLine();
+		System.out.println("ì´ë¦„: "); name = sc.nextLine();
+		System.out.println("ì „í™”ë²ˆí˜¸ : "); phone = sc.nextLine();
+		System.out.println("ì£¼ì†Œ: "); address = sc.nextLine();
 		
 		//add HighSchool Friend
 		if (choice == 1) {
-			System.out.println("Á÷¾÷: "); work = sc.nextLine();
+			System.out.println("ì§ì—…: "); work = sc.nextLine();
 			addFriendInfo(new HighFriend(name,phone,address,work));
 			
 		}
 		
 		//add University Friend
 		else {
-			System.out.println("Àü°ø: "); major = sc.nextLine();
+			System.out.println("ì „ê³µ: "); major = sc.nextLine();
 			addFriendInfo(new UnivFriend(name,phone,address,major));
 		}
-		System.out.println("Á¤º¸ ÀÔ·Â ¿Ï·á!");
-		System.out.println("");
+		
+		System.out.println(" ");
+		System.out.println("ì¹œêµ¬ì˜ ì •ë³´ë¥¼ ì €ì¥í•˜ì˜€ìŠµë‹ˆë‹¤!");
+		System.out.println(" ");
 		
 	}
 	
@@ -71,13 +73,13 @@ class FriendInfoHandler {
 			int choice;
 			Scanner sc = new Scanner(System.in); 
 			
-			System.out.println("<*****Ä£±¸µî·Ï ÇÁ·Î±×·¥*****>");
-			System.out.println("1. °í±³ Ä£±¸ µî·ÏÇÏ±â");
-			System.out.println("2. ´ëÇĞ Ä£±¸ µî·ÏÇÏ±â");
-			System.out.println("3. ¼¼ºÎ Á¤º¸ º¸±â");
-			System.out.println("4. °£´Ü Á¤º¸ º¸±â");
-			System.out.println("5. Á¾·á");
-			System.out.print("¼±ÅÃ>> ");
+			System.out.println("<*****ì¹œêµ¬ì •ë³´ì €ì¥ ì‹œìŠ¤í…œ*****>");
+			System.out.println("1. ê³ êµ ì¹œêµ¬ì •ë³´ ë“±ë¡í•˜ê¸°");
+			System.out.println("2. ëŒ€í•™ ì¹œêµ¬ì •ë³´ ë“±ë¡í•˜ê¸°");
+			System.out.println("3. ì„¸ë¶€ì •ë³´ í™•ì¸");
+			System.out.println("4. ê°„ë‹¨ì •ë³´ í™•ì¸");
+			System.out.println("5. ì¢…ë£Œ");
+			System.out.print("ì„ íƒ>> ");
 			
 			choice = sc.nextInt();
 		
@@ -92,7 +94,7 @@ class FriendInfoHandler {
 					handler.showBasicDatas();
 					break;
 				case 5:
-					System.out.println("½Ã½ºÅÛÀ» Á¾·áÇÕ´Ï´Ù");
+					System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 					return;
 			}
 			

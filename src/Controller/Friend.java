@@ -14,9 +14,9 @@ class Friend {
 	
 	
 	public void showDetailData(){
-		System.out.println("ÀÌ¸§:" + name);
-		System.out.println("ÀüÈ­¹øÈ£:" + phoneNumber);
-		System.out.println("ÁÖ¼Ò:" + address);
+		System.out.println("ì´ë¦„:" + name);
+		System.out.println("ì „í™”ë²ˆí˜¸:" + phoneNumber);
+		System.out.println("ì£¼ì†Œ:" + address);
 	}
 	
 	public void showBasicData() {}
